@@ -30,6 +30,15 @@ ccstatusline points apply everywhere.
   There is **no setting to force the window size** — it is derived, not
   configured. `context-length` (current tokens) is read from the session
   transcript JSONL; with no transcript it reads `0`.
+- **The context progress bar is the `contextSlider` metadata, NOT `display`.**
+  `context-percentage` ignores the `display`/`displayMode: progress` keys that the
+  *usage* widgets use. Its bar is controlled by
+  `metadata.contextSlider: "off" | "fraction" | "progress" | "progress-short"`
+  (this config uses `"progress"` → a fixed **10‑block** bar `[███████░░░] 70%`).
+  - **Do NOT use the `context-bar` widget in a Claude Code statusLine.** It sizes
+    itself to the terminal width, which a *captured* statusLine command doesn't
+    have — so it renders **empty** (the symptom: "the bar isn't showing"). The
+    fixed‑width `contextSlider` bar is width‑independent and always renders.
 - **No conditional / threshold‑based widgets.** ccstatusline's only `threshold`
   is the global `compactThreshold` for `flexMode: full-until-compact` (collapses
   the whole line when the terminal is narrow) — there is **no per‑widget warning

@@ -79,10 +79,11 @@
         "id": "cpbar",
         "type": "context-percentage",
         "color": "hex:14F9D5",
+        "bold": true,
+        "rawValue": true,
         "metadata": {
           "nerdFont": "true",
-          "display": "progress",
-          "displayMode": "progress"
+          "contextSlider": "progress"
         }
       }
     ],
