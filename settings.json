@@ -73,31 +73,7 @@
         "type": "custom-text",
         "color": "hex:EDFF82",
         "bold": true,
-        "customText": " Tokens:"
-      },
-      {
-        "id": "cl1",
-        "type": "context-length",
-        "color": "hex:14F9D5",
-        "rawValue": true,
-        "metadata": {
-          "nerdFont": "true"
-        }
-      },
-      {
-        "id": "d6",
-        "type": "custom-text",
-        "color": "hex:383838",
-        "customText": " / "
-      },
-      {
-        "id": "cw1",
-        "type": "context-window",
-        "color": "hex:A550DF",
-        "rawValue": true,
-        "metadata": {
-          "nerdFont": "true"
-        }
+        "customText": " Context:"
       },
       {
         "id": "cpbar",
@@ -107,16 +83,6 @@
           "nerdFont": "true",
           "display": "progress",
           "displayMode": "progress"
-        }
-      },
-      {
-        "id": "cp1",
-        "type": "context-percentage",
-        "color": "hex:F25D94",
-        "rawValue": true,
-        "bold": true,
-        "metadata": {
-          "nerdFont": "true"
         }
       }
     ],
