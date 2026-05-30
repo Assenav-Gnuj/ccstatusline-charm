@@ -9,25 +9,30 @@ Four compact lines, each led by a Nerd Font icon, with usage bars, reset
 countdowns, cost, and thinking effort.
 
 ```text
- Model: Opus 4.8 | ~/charm/clawd-pet  main ✓ | 26%
- Session: [████████░░░░░░░░░░░░░░░░░░░░░░░░] 26.0%  16m
- Weekly:  [██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 7.0%   4d 8hr 46m
- Cost: $2.45 | Thinking: default
+ Model: Opus 4.8 | ~/charm/clawd-pet   main ✓ | 26%
+ Session: [████████░░░░░░░░░░░░░░░░░░░░░░░░] 26.0%   16m
+ Weekly:  [██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 7.0%    4d 8hr 46m
+ Cost: $2.45 |  Thinking: default
+ 700.0k / 1.0M · 70.0%   compact@70%
 ```
 
-*(icons —  bolt,  calendar,  dollar,  clock — render with a Nerd Font)*
+*(icons —  bolt,  calendar,  dollar,  clock,  gauge,  git,  bulb,
+ warn — render with a Nerd Font)*
 
 ## Layout
 
 | Line | Lead icon | Content |
 |------|-----------|---------|
-| 1 | model glyph | model · cwd (2 segments) · git branch + changes · context % |
+| 1 | model glyph | model · cwd (2 segments) · git branch +  changes · context % |
 | 2 |  bolt | 5‑hour **session** usage bar +  clock + block reset countdown |
 | 3 |  calendar | **weekly** usage bar +  clock + weekly reset countdown |
-| 4 |  dollar | session **cost** · **thinking effort** |
+| 4 |  dollar | session **cost** ·  **thinking effort** |
+| 5 |  gauge | **context**: tokens used **/ 1M** · % ·  `compact@70%` reminder |
 
 Usage bars and reset timers come from ccstatusline's OAuth usage API (the same
-numbers as `/usage` inside Claude Code).
+numbers as `/usage` inside Claude Code). The context line reads live token usage
+from the session transcript; the **1M window is detected from the `[1m]` model
+id** (Claude Code's 1M‑context Opus). On a 200k model it shows `/ 200k`.
 
 ## Palette (lipgloss `examples/layout/main.go`)
 

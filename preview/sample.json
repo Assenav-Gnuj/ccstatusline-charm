@@ -1,1 +1,24 @@
-{"hook_event_name":"Status","session_id":"abc123","transcript_path":"/tmp/t.jsonl","cwd":"C:/Users/Oreo/charm/clawd-pet","model":{"id":"claude-opus-4-8","display_name":"Opus 4.8"},"workspace":{"current_dir":"C:/Users/Oreo/charm/clawd-pet","project_dir":"C:/Users/Oreo/charm"},"output_style":{"name":"default"},"cost":{"total_cost_usd":2.45,"total_duration_ms":123456,"total_lines_added":120,"total_lines_removed":8},"exceeds_200k_tokens":false}
+{
+  "hook_event_name": "Status",
+  "session_id": "demo",
+  "transcript_path": "preview/transcript.jsonl",
+  "cwd": "C:/Users/Oreo/charm/clawd-pet",
+  "model": {
+    "id": "claude-opus-4-8[1m]",
+    "display_name": "Opus 4.8 (1M context)"
+  },
+  "workspace": {
+    "current_dir": "C:/Users/Oreo/charm/clawd-pet",
+    "project_dir": "C:/Users/Oreo/charm"
+  },
+  "output_style": {
+    "name": "default"
+  },
+  "cost": {
+    "total_cost_usd": 2.45,
+    "total_duration_ms": 123456,
+    "total_lines_added": 120,
+    "total_lines_removed": 8
+  },
+  "exceeds_200k_tokens": true
+}

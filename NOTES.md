@@ -22,6 +22,17 @@ ccstatusline points apply everywhere.
   2.2.19). It only reads `output_style` from the Claude Code stdin payload, so
   the closest "mode" widget is `output-style` — which usually just shows
   `default`. We dropped it from this layout.
+- **Context window (line 5): the 1M limit is auto‑detected from the model id.**
+  `context-window` renders `1.0M` only when the model id contains `[1m]` (e.g.
+  `claude-opus-4-8[1m]`); otherwise it falls back to `200k`, and
+  `context-percentage` is computed against that same denominator. So `700k`
+  context shows `70%` on a 1M model but would read `100%`+ on a 200k model.
+  There is **no setting to force the window size** — it is derived, not
+  configured. `context-length` (current tokens) is read from the session
+  transcript JSONL; with no transcript it reads `0`.
+- The `compact@70%` text is a **static reminder**, not a dynamic trigger —
+  ccstatusline custom‑text can't be conditional. The live percentage next to it
+  is what you watch; run `/compact` when it nears 70%.
 
 ## Nerd Font glyph gotcha
 
