@@ -1,4 +1,4 @@
-Model: Opus 4.8 | (no git)
- Session: [████████░░░░░░░░░░░░░░░░░░░░░░░░] 26.0%  16m
- Weekly: [██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 7.0%  4d 8hr 46m
- Cost: $2.45 | Thinking: default
+Model: Opus 4.8 |  (no git)
+ Session: [█████████░░░░░░░░░░░░░░░░░░░░░░░] 28.0%  7m
+ Weekly: [███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 8.0%  4d 8hr 37m
+ Cost: $2.45 |  Thinking: default
