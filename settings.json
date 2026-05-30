@@ -73,12 +73,13 @@
         "type": "custom-text",
         "color": "hex:EDFF82",
         "bold": true,
-        "customText": " Context:"
+        "customText": " Context: "
       },
       {
         "id": "ob",
         "type": "custom-text",
         "color": "hex:EDFF82",
+        "bold": true,
         "customText": "["
       },
       {
@@ -87,7 +88,6 @@
         "color": "hex:EDFF82",
         "bold": true,
         "rawValue": true,
-        "merge": "no-padding",
         "metadata": {
           "nerdFont": "true",
           "display": "slider-only"
@@ -97,8 +97,8 @@
         "id": "cb",
         "type": "custom-text",
         "color": "hex:EDFF82",
-        "customText": "]",
-        "merge": "no-padding"
+        "bold": true,
+        "customText": "] "
       },
       {
         "id": "cp1",
