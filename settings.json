@@ -88,7 +88,7 @@
       {
         "id": "k1",
         "type": "custom-text",
-        "color": "hex:14F9D5",
+        "color": "hex:FFFF00",
         "customText": "  "
       },
       {
@@ -124,7 +124,7 @@
       {
         "id": "k2",
         "type": "custom-text",
-        "color": "hex:14F9D5",
+        "color": "hex:FFFF00",
         "customText": "  "
       },
       {
