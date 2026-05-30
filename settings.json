@@ -41,7 +41,7 @@
       {
         "id": "g1",
         "type": "custom-text",
-        "color": "hex:FF5F87",
+        "color": "hex:FFFF00",
         "customText": " "
       },
       {
@@ -163,7 +163,7 @@
       {
         "id": "t1",
         "type": "custom-text",
-        "color": "hex:F25D94",
+        "color": "hex:FFFF00",
         "customText": " "
       },
       {
