@@ -10,7 +10,7 @@ countdowns, cost, and thinking effort.
 
 ```text
  Model: Opus 4.8 | ~/charm/clawd-pet   main ✓ | 26%
- Context: ▁▁▁▁▂▃▅▆▇█ 70.0%
+ Context: [▓▓▓▓▓▓▓░░░] 70.0%
  Session: [████████░░░░░░░░░░░░░░░░░░░░░░░░] 26.0%   16m
  Weekly:  [██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 7.0%    4d 8hr 46m
  Cost: $2.45 |  Thinking: default

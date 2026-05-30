@@ -73,17 +73,41 @@
         "type": "custom-text",
         "color": "hex:EDFF82",
         "bold": true,
-        "customText": " Context: "
+        "customText": " Context:"
+      },
+      {
+        "id": "ob",
+        "type": "custom-text",
+        "color": "hex:EDFF82",
+        "customText": "["
       },
       {
         "id": "cpbar",
         "type": "context-percentage",
-        "color": "hex:14F9D5",
+        "color": "hex:EDFF82",
+        "bold": true,
+        "rawValue": true,
+        "merge": "no-padding",
+        "metadata": {
+          "nerdFont": "true",
+          "display": "slider-only"
+        }
+      },
+      {
+        "id": "cb",
+        "type": "custom-text",
+        "color": "hex:EDFF82",
+        "customText": "]",
+        "merge": "no-padding"
+      },
+      {
+        "id": "cp1",
+        "type": "context-percentage",
+        "color": "hex:EDFF82",
         "bold": true,
         "rawValue": true,
         "metadata": {
-          "nerdFont": "true",
-          "display": "slider"
+          "nerdFont": "true"
         }
       }
     ],
