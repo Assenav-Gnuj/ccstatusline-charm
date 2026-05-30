@@ -72,21 +72,21 @@
         "id": "l6",
         "type": "custom-text",
         "color": "hex:EDFF82",
-        "bold": true,
+        "bold": false,
         "customText": " Context: "
       },
       {
         "id": "ob",
         "type": "custom-text",
         "color": "hex:EDFF82",
-        "bold": true,
+        "bold": false,
         "customText": "["
       },
       {
         "id": "cpbar",
         "type": "context-percentage",
         "color": "hex:EDFF82",
-        "bold": true,
+        "bold": false,
         "rawValue": true,
         "metadata": {
           "nerdFont": "true",
@@ -97,14 +97,14 @@
         "id": "cb",
         "type": "custom-text",
         "color": "hex:EDFF82",
-        "bold": true,
+        "bold": false,
         "customText": "] "
       },
       {
         "id": "cp1",
         "type": "context-percentage",
         "color": "hex:EDFF82",
-        "bold": true,
+        "bold": false,
         "rawValue": true,
         "metadata": {
           "nerdFont": "true"
@@ -116,7 +116,7 @@
         "id": "l2",
         "type": "custom-text",
         "color": "hex:EDFF82",
-        "bold": true,
+        "bold": false,
         "customText": " "
       },
       {
