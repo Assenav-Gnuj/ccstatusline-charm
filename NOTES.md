@@ -30,9 +30,13 @@ ccstatusline points apply everywhere.
   There is **no setting to force the window size** — it is derived, not
   configured. `context-length` (current tokens) is read from the session
   transcript JSONL; with no transcript it reads `0`.
-- The `compact@70%` text is a **static reminder**, not a dynamic trigger —
-  ccstatusline custom‑text can't be conditional. The live percentage next to it
-  is what you watch; run `/compact` when it nears 70%.
+- **No conditional / threshold‑based widgets.** ccstatusline's only `threshold`
+  is the global `compactThreshold` for `flexMode: full-until-compact` (collapses
+  the whole line when the terminal is narrow) — there is **no per‑widget warning
+  threshold** that could, say, show a "compact now" hint only above 70%. Because
+  custom‑text can't be conditional either, an always‑on `compact@70%` label was
+  dropped. The **context progress bar** (line 2) is the at‑a‑glance fullness cue;
+  run `/compact` when it's near full.
 
 ## Nerd Font glyph gotcha
 

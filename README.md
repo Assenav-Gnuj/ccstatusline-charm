@@ -10,27 +10,27 @@ countdowns, cost, and thinking effort.
 
 ```text
  Model: Opus 4.8 | ~/charm/clawd-pet   main ✓ | 26%
+ Tokens: 700.0k / 1.0M [██████████░░░░] 70%
  Session: [████████░░░░░░░░░░░░░░░░░░░░░░░░] 26.0%   16m
  Weekly:  [██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 7.0%    4d 8hr 46m
  Cost: $2.45 |  Thinking: default
- 700.0k / 1.0M · 70.0%   compact@70%
 ```
 
-*(icons —  bolt,  calendar,  dollar,  clock,  gauge,  git,  bulb,
- warn — render with a Nerd Font)*
+*(icons —  gauge,  bolt,  calendar,  dollar,  clock,  git,  bulb
+ — render with a Nerd Font)*
 
 ## Layout
 
 | Line | Lead icon | Content |
 |------|-----------|---------|
 | 1 | model glyph | model · cwd (2 segments) · git branch +  changes · context % |
-| 2 |  bolt | 5‑hour **session** usage bar +  clock + block reset countdown |
-| 3 |  calendar | **weekly** usage bar +  clock + weekly reset countdown |
-| 4 |  dollar | session **cost** ·  **thinking effort** |
-| 5 |  gauge | **context**: tokens used **/ 1M** · % ·  `compact@70%` reminder |
+| 2 |  gauge | **Tokens**: used **/ 1M** window + **progress bar** + % |
+| 3 |  bolt | 5‑hour **session** usage bar +  clock + block reset countdown |
+| 4 |  calendar | **weekly** usage bar +  clock + weekly reset countdown |
+| 5 |  dollar | session **cost** ·  **thinking effort** |
 
 Usage bars and reset timers come from ccstatusline's OAuth usage API (the same
-numbers as `/usage` inside Claude Code). The context line reads live token usage
+numbers as `/usage` inside Claude Code). The Tokens line reads live context usage
 from the session transcript; the **1M window is detected from the `[1m]` model
 id** (Claude Code's 1M‑context Opus). On a 200k model it shows `/ 200k`.
 

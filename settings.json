@@ -69,6 +69,59 @@
     ],
     [
       {
+        "id": "l6",
+        "type": "custom-text",
+        "color": "hex:EDFF82",
+        "bold": true,
+        "customText": " Tokens:"
+      },
+      {
+        "id": "cl1",
+        "type": "context-length",
+        "color": "hex:14F9D5",
+        "rawValue": true,
+        "metadata": {
+          "nerdFont": "true"
+        }
+      },
+      {
+        "id": "d6",
+        "type": "custom-text",
+        "color": "hex:383838",
+        "customText": " / "
+      },
+      {
+        "id": "cw1",
+        "type": "context-window",
+        "color": "hex:A550DF",
+        "rawValue": true,
+        "metadata": {
+          "nerdFont": "true"
+        }
+      },
+      {
+        "id": "cpbar",
+        "type": "context-percentage",
+        "color": "hex:14F9D5",
+        "metadata": {
+          "nerdFont": "true",
+          "display": "progress",
+          "displayMode": "progress"
+        }
+      },
+      {
+        "id": "cp1",
+        "type": "context-percentage",
+        "color": "hex:F25D94",
+        "rawValue": true,
+        "bold": true,
+        "metadata": {
+          "nerdFont": "true"
+        }
+      }
+    ],
+    [
+      {
         "id": "l2",
         "type": "custom-text",
         "color": "hex:EDFF82",
@@ -173,61 +226,6 @@
         "metadata": {
           "nerdFont": "true"
         }
-      }
-    ],
-    [
-      {
-        "id": "l6",
-        "type": "custom-text",
-        "color": "hex:EDFF82",
-        "bold": true,
-        "customText": " "
-      },
-      {
-        "id": "cl1",
-        "type": "context-length",
-        "color": "hex:14F9D5",
-        "rawValue": true,
-        "metadata": {
-          "nerdFont": "true"
-        }
-      },
-      {
-        "id": "d6",
-        "type": "custom-text",
-        "color": "hex:383838",
-        "customText": " / "
-      },
-      {
-        "id": "cw1",
-        "type": "context-window",
-        "color": "hex:A550DF",
-        "rawValue": true,
-        "metadata": {
-          "nerdFont": "true"
-        }
-      },
-      {
-        "id": "p6",
-        "type": "custom-text",
-        "color": "hex:383838",
-        "customText": " · "
-      },
-      {
-        "id": "cp1",
-        "type": "context-percentage",
-        "color": "hex:F25D94",
-        "rawValue": true,
-        "bold": true,
-        "metadata": {
-          "nerdFont": "true"
-        }
-      },
-      {
-        "id": "h6",
-        "type": "custom-text",
-        "color": "hex:FFFF00",
-        "customText": "   compact@70%"
       }
     ]
   ],
