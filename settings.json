@@ -83,7 +83,7 @@
         "rawValue": true,
         "metadata": {
           "nerdFont": "true",
-          "contextSlider": "progress"
+          "display": "slider"
         }
       }
     ],

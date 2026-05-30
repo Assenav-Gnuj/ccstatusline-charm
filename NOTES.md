@@ -30,15 +30,19 @@ ccstatusline points apply everywhere.
   There is **no setting to force the window size** — it is derived, not
   configured. `context-length` (current tokens) is read from the session
   transcript JSONL; with no transcript it reads `0`.
-- **The context progress bar is the `contextSlider` metadata, NOT `display`.**
-  `context-percentage` ignores the `display`/`displayMode: progress` keys that the
-  *usage* widgets use. Its bar is controlled by
-  `metadata.contextSlider: "off" | "fraction" | "progress" | "progress-short"`
-  (this config uses `"progress"` → a fixed **10‑block** bar `[███████░░░] 70%`).
+- **The context bar is `metadata.display: "slider"`** — and *only* those values
+  produce a bar. `getContextSliderMode` reads `metadata.display` and accepts:
+  - `"slider"` → gradient bar **+ percentage**: `▁▁▁▁▂▃▅▆▇█ 70.0%`
+  - `"slider-only"` → gradient bar, no number
+  - anything else (incl. `"progress"`, `"progress"`+`displayMode`, or unset) →
+    `"none"` → **no bar, just the % number**. This was the "bar isn't showing"
+    bug: `display: "progress"` (which works for the *usage* widgets) is silently
+    ignored by `context-percentage`. Pair with `rawValue: true` to suppress the
+    built‑in `Ctx Used:` label when you supply your own (here a `Context:`
+    custom‑text lead).
   - **Do NOT use the `context-bar` widget in a Claude Code statusLine.** It sizes
-    itself to the terminal width, which a *captured* statusLine command doesn't
-    have — so it renders **empty** (the symptom: "the bar isn't showing"). The
-    fixed‑width `contextSlider` bar is width‑independent and always renders.
+    to the terminal width, which a *captured* statusLine command doesn't have, so
+    it renders **empty**. The `slider` bar is fixed‑width and always renders.
 - **No conditional / threshold‑based widgets.** ccstatusline's only `threshold`
   is the global `compactThreshold` for `flexMode: full-until-compact` (collapses
   the whole line when the terminal is narrow) — there is **no per‑widget warning
