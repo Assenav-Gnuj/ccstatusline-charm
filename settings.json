@@ -39,6 +39,12 @@
         }
       },
       {
+        "id": "g1",
+        "type": "custom-text",
+        "color": "hex:FF5F87",
+        "customText": " "
+      },
+      {
         "id": "c1",
         "type": "git-changes",
         "color": "hex:FF5F87",
@@ -153,6 +159,12 @@
         "id": "s7",
         "type": "separator",
         "color": "hex:383838"
+      },
+      {
+        "id": "t1",
+        "type": "custom-text",
+        "color": "hex:F25D94",
+        "customText": " "
       },
       {
         "id": "e1",
