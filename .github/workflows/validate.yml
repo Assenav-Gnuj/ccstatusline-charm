@@ -1,0 +1,32 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate settings.json is parseable
+        run: node -e "JSON.parse(require('fs').readFileSync('settings.json','utf8')); console.log('settings.json OK')"
+
+      - name: Install ccstatusline
+        run: npm install -g ccstatusline
+
+      - name: Render sample payload (must be non-empty)
+        run: |
+          out="$(cat preview/sample.json | ccstatusline)"
+          echo "$out"
+          test -n "$out" || { echo 'empty render'; exit 1; }
+
+      - name: Check Nerd Font glyph bytes survived
+        run: |
+          grep customText settings.json | od -An -tx1 | grep -oE 'ef [0-9a-f]{2} [0-9a-f]{2}' | sort -u
+          grep customText settings.json | od -An -tx1 | grep -q 'ef 80 97' || { echo 'clock glyph missing'; exit 1; }

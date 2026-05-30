@@ -1,0 +1,187 @@
+{
+  "version": 3,
+  "lines": [
+    [
+      {
+        "id": "m1",
+        "type": "model",
+        "color": "hex:7D56F4",
+        "bold": true,
+        "metadata": {
+          "nerdFont": "true"
+        }
+      },
+      {
+        "id": "s1",
+        "type": "separator",
+        "color": "hex:383838"
+      },
+      {
+        "id": "d1",
+        "type": "cwd",
+        "color": "hex:A550DF",
+        "metadata": {
+          "nerdFont": "true",
+          "segments": "2"
+        }
+      },
+      {
+        "id": "s2",
+        "type": "separator",
+        "color": "hex:383838"
+      },
+      {
+        "id": "b1",
+        "type": "git-branch",
+        "color": "hex:73F59F",
+        "metadata": {
+          "nerdFont": "true"
+        }
+      },
+      {
+        "id": "c1",
+        "type": "git-changes",
+        "color": "hex:FF5F87",
+        "metadata": {
+          "nerdFont": "true"
+        }
+      },
+      {
+        "id": "s3",
+        "type": "separator",
+        "color": "hex:383838"
+      },
+      {
+        "id": "x1",
+        "type": "context-percentage",
+        "color": "hex:14F9D5",
+        "bold": true,
+        "metadata": {
+          "nerdFont": "true"
+        }
+      }
+    ],
+    [
+      {
+        "id": "l2",
+        "type": "custom-text",
+        "color": "hex:EDFF82",
+        "bold": true,
+        "customText": " "
+      },
+      {
+        "id": "u1",
+        "type": "session-usage",
+        "color": "hex:73F59F",
+        "metadata": {
+          "nerdFont": "true",
+          "display": "progress",
+          "displayMode": "progress"
+        }
+      },
+      {
+        "id": "k1",
+        "type": "custom-text",
+        "color": "hex:14F9D5",
+        "customText": "  "
+      },
+      {
+        "id": "r1",
+        "type": "reset-timer",
+        "color": "hex:14F9D5",
+        "rawValue": true,
+        "metadata": {
+          "nerdFont": "true",
+          "display": "time",
+          "displayMode": "time"
+        }
+      }
+    ],
+    [
+      {
+        "id": "l3",
+        "type": "custom-text",
+        "color": "hex:EDFF82",
+        "bold": true,
+        "customText": " "
+      },
+      {
+        "id": "w1",
+        "type": "weekly-usage",
+        "color": "hex:F25D94",
+        "metadata": {
+          "nerdFont": "true",
+          "display": "progress",
+          "displayMode": "progress"
+        }
+      },
+      {
+        "id": "k2",
+        "type": "custom-text",
+        "color": "hex:14F9D5",
+        "customText": "  "
+      },
+      {
+        "id": "r2",
+        "type": "weekly-reset-timer",
+        "color": "hex:14F9D5",
+        "rawValue": true,
+        "metadata": {
+          "nerdFont": "true",
+          "display": "time",
+          "displayMode": "time"
+        }
+      }
+    ],
+    [
+      {
+        "id": "l4",
+        "type": "custom-text",
+        "color": "hex:EDFF82",
+        "bold": true,
+        "customText": " "
+      },
+      {
+        "id": "co1",
+        "type": "session-cost",
+        "color": "hex:0000FF",
+        "metadata": {
+          "nerdFont": "true"
+        }
+      },
+      {
+        "id": "s7",
+        "type": "separator",
+        "color": "hex:383838"
+      },
+      {
+        "id": "e1",
+        "type": "thinking-effort",
+        "color": "hex:F25D94",
+        "metadata": {
+          "nerdFont": "true"
+        }
+      }
+    ]
+  ],
+  "flexMode": "full-minus-40",
+  "compactThreshold": 60,
+  "colorLevel": 3,
+  "inheritSeparatorColors": false,
+  "globalBold": false,
+  "gitCacheTtlSeconds": 5,
+  "minimalistMode": false,
+  "powerline": {
+    "enabled": false,
+    "separators": [
+      ""
+    ],
+    "separatorInvertBackground": [
+      false
+    ],
+    "startCaps": [],
+    "endCaps": [],
+    "autoAlign": false,
+    "continueThemeAcrossLines": false
+  }
+}
